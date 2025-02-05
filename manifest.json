@@ -1,0 +1,15 @@
+{
+  "name": "User Status Indicator",
+  "description": "Parses tabs and user's Google Calendar to determine their status",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "traffic.png"
+  },
+  "permissions": ["tabs", "alarms"],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  }
+}
